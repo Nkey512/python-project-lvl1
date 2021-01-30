@@ -1,11 +1,26 @@
-name: Linter-check
-on: push
+name: Linter
+
+on:
+  - push
+
 jobs:
-  linter-check:
-    name: Lint code
+  build:
     runs-on: ubuntu-latest
+    # strategy:
+      # matrix:
+        # we want to test our package on several versions of Python
+        # python-version: [3.6, 3.7, 3.8]
     steps:
-      name: Checkout code
-      uses: actions/checkout@v2
-      name: Run Linter
-      run: make lint
+      - uses: actions/checkout@v2
+      # - name: Set up Python ${{ matrix.python-version }}
+        # uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+        # make depends on poetry
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
+      - name: Run linter
+        run: |
+          make lint
