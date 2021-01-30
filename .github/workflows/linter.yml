@@ -20,6 +20,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install poetry
+          poetry config virtualenvs.in-project true
+          poetry init
           make install
       - name: Run linter
         run: |
