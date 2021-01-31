@@ -2,7 +2,7 @@
 def main():
     from brain_games import cli
     print('Welcome to the Brain Games!')
-    print(cli.welcome_user())
+    print('Hello, {}!'.format(cli.welcome_user()))
 
 
 if __name__ == '__main__':
