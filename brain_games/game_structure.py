@@ -1,4 +1,4 @@
-def calc_game(func, name, levels):
+def game(func, name, levels):
     right_answers = 0
     while right_answers != levels:
         result = func()
