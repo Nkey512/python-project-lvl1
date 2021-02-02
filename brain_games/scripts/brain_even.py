@@ -6,6 +6,7 @@ def main():
         levels
 
     user = cli.welcome_user()
+    bel.even_description()
     bes.even_game(bel.even_logic, user, levels.even_levels)
 
 

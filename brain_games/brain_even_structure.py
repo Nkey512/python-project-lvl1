@@ -1,5 +1,4 @@
 def even_game(func, name, levels):
-    print('Answer \'yes\' if the number is even, otherwise answer \'no\'.')
     right_answers = 0
     while right_answers != levels:
         result = func()

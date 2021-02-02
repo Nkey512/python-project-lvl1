@@ -2,6 +2,10 @@ from random import randint
 import prompt
 
 
+def even_description():
+    print('Answer \'yes\' if the number is even, otherwise answer \'no\'.')
+
+
 def even_logic():
     number = randint(1, 99)
     even = not bool(number % 2)
