@@ -10,7 +10,7 @@ def game(func, name, levels):
                 "\'{}\' is wrong answer ;(. Correct answer was \'{}\'"
                 .format(result['answer'], result['correct_answer'])
             )
-            print("Let\'s try again {}".format(name))
+            print("Let\'s try again, {}!".format(name))
             break
     else:
         print('Congratulations, {}!'.format(name))
