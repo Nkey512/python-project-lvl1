@@ -6,7 +6,7 @@ def prime_description():
     print('Answer \'yes\' if given number is prime. Otherwise answer \'no\'.')
 
 
-def prime_logic():
+def prime_logic():  # noqa: C901
     number = randint(1, 99)
 
     def prime_test(n):
