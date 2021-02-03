@@ -7,7 +7,7 @@ def progression_description():
 
 
 def progression_logic():
-    length = randint(5, 10)
+    length = 8
     start = randint(0, 20)
     delta = randint(2, 10)
     seq = [start + delta * i for i in range(length)]
