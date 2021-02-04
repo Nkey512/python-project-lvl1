@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Five simple console games"
 authors = ["Nikita Kuznetsov <nikita.kuznetsov512@gmail.com>"]
+repository = "https://github.com/Nkey512/python-project-lvl1"
 packages = [
   { include = "brain_games" },
 ]
